@@ -1,0 +1,20 @@
+﻿<form asp-controller="Home" asp-action="UploadFile" method="post"
+      enctype="multipart/form-data">
+    
+    <input type="file" name="file" />
+    <button type="submit">Upload File</button>
+</form>
+
+<form asp-controller="Home" asp-action="UploadFiles" method="post"
+      enctype="multipart/form-data">
+
+    <input type="file" name="files" multiple />
+    <button type="submit">Upload Files</button>
+</form>
+
+<form asp-controller="Home" asp-action="UploadFileViaModel" method="post"
+      enctype="multipart/form-data">
+
+    <input type="file" name="FileToUpload" />
+    <button type="submit">Upload File (model)</button>
+</form>

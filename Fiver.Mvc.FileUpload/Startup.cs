@@ -2,7 +2,6 @@
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.FileProviders;
-using Microsoft.Extensions.Logging;
 using System.IO;
 
 namespace Fiver.Mvc.FileUpload
@@ -21,8 +20,7 @@ namespace Fiver.Mvc.FileUpload
 
         public void Configure(
             IApplicationBuilder app,
-            IHostingEnvironment env,
-            ILoggerFactory loggerFactory)
+            IHostingEnvironment env)
         {
             app.UseDeveloperExceptionPage();
             app.UseMvc(routes =>
